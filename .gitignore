@@ -1,3 +1,5 @@
 personal*
 *.ink
 *.ipynb_checkpoints
+data
+models
