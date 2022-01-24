@@ -25,7 +25,7 @@ This guide describes how to work with prodigy on a strato instance.
   - ```bash
     # example
     
-    python3 -m virtualenv prodigy # ubuntu 20
+    python3 -m venv prodigy # ubuntu 20
     source prodigy/bin/activate
     ```
 
