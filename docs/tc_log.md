@@ -90,5 +90,12 @@
 #### 2022-01-24
 
 - Exploring combination-options between data tagged via NER and POS recipes - overall same structure
-  - Used notebook "data_combine.ipynb"
 - POS recipe splits sentences by default - "unsegmented" option. May make sense to re-do POS-tagging with manually split sentences.
+
+
+
+#### 2022-02-09
+
+- Creating dataset containing all text pieces used for annotation: `tc_annotate-set-all-mixed_20220902.json`
+  - Used "data_handling.ipynb"
+
