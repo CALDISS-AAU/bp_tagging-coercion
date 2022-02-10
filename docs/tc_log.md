@@ -57,4 +57,38 @@
 #### 2022-01-19
 
 - Saved elasticsearch settings files in elasticzip.zip in project folder on OneDrive
-- 
+
+
+
+#### 2022-01-24
+
+- Exporting data from old-strato to zip "tc-export_20220124" and moving to new instance on new strato
+- Original data order in database:
+  - test_test
+    test_runaways
+    runaways_anno-guide
+    runaways_anno-names
+    tc_anno-verbs
+    runaways_anno-names_reviewed
+    tc_anno-verbs_reviewed
+    tc_anno-ents
+    tc_anno-ents_reviewed
+    tc_anno-names_reviewed
+    tc_names-ents_reviewed
+    tc_names-ents-merged
+    tc_anno-place
+    tc_anno-ents2
+    tc_anno-ents2_reviewed
+    tc_anno-ents_comb
+    tc_pos-nouns
+    tc_ADDRESS_20210702
+    tc_CITY_20210702
+    tc_NAME_20210702
+
+
+
+#### 2022-01-24
+
+- Exploring combination-options between data tagged via NER and POS recipes - overall same structure
+  - Used notebook "data_combine.ipynb"
+- POS recipe splits sentences by default - "unsegmented" option. May make sense to re-do POS-tagging with manually split sentences.
