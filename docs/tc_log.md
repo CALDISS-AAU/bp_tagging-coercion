@@ -99,3 +99,29 @@
 - Creating dataset containing all text pieces used for annotation: `tc_annotate-set-all-mixed_20220902.json`
   - Used "data_handling.ipynb"
 
+
+
+#### 2022-02-11
+
+- (Re)started tagging of nouns ("fællesnavne") in `tc_annotate-set-all-mixed_20220902.json` using bash file `prodigy_annotate_nouns_pos.sh`:
+
+  ```
+  #!/bin/bash
+  
+  source prodigy/bin/activate
+  
+  export PRODIGY_PORT="8090"
+  export PRODIGY_BASIC_AUTH_USER=""
+  export PRODIGY_BASIC_AUTH_PASS=""
+  export PRODIGY_ALLOWED_SESSIONS="johan,anders,kristian"
+  
+  nohup prodigy pos.correct tc_pos-nouns_feb22 da_core_news_lg "./data/tc_annotate-set-all-mixed_20220902.json" --label NOUN,VERB --unsegmented &> nohup_pos-noun_20220211.out &
+  
+  ```
+
+- Using `pos.correct`: https://prodi.gy/docs/recipes#pos 
+
+- Using spacy model [da_core_news_lg](https://spacy.io/models/da#da_core_news_lg): https://spacy.io/models/da#da_core_news_lg
+
+- Stored to dataset `tc_pos_nouns_feb22` 
+
