@@ -125,3 +125,10 @@
 
 - Stored to dataset `tc_pos_nouns_feb22` 
 
+
+
+#### 2022-02-22
+
+- Identified problem of duplicate documents in annotation - problem with current version of prodigy (1.11.7)
+- Temporary fix using suggestion from support forums: https://support.prodi.gy/t/duplicate-annotations-in-output/4961/35
+
